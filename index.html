@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171124">
+<title>for bunny ♡</title>
+<style>
+:root{--bg:#171124;--panel:#241a35;--pink:#ff77b7;--hot:#ff4d94;--lav:#c9a7ff;--cream:#fff4fb;--muted:#c7b9d5;--line:#ffffff20}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 12% 8%,#4b2454 0,transparent 31%),radial-gradient(circle at 90% 32%,#30245d 0,transparent 34%),var(--bg);color:var(--cream);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;min-height:100vh;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--lav);outline-offset:3px}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+.spark{position:absolute;animation:fall 1.7s ease-in forwards;font-size:20px}
+@keyframes fall{to{transform:translateY(110vh) rotate(420deg);opacity:0}}
+.wrap{width:min(760px,100%);margin:auto;padding:22px 16px 70px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+.pill{border:1px solid var(--line);padding:8px 12px;border-radius:99px;background:#ffffff08}
+.hero{text-align:center;padding:64px 8px 40px;position:relative}
+.eyebrow{color:var(--pink);font-size:.82rem;text-transform:uppercase;letter-spacing:.17em;font-weight:800}
+h1{font-size:clamp(2.65rem,11vw,5.7rem);line-height:.96;letter-spacing:-.07em;margin:18px 0}
+h1 span{color:var(--pink);text-shadow:0 0 32px #ff77b744}
+.lead{max-width:470px;margin:0 auto;color:var(--muted);font-size:1.05rem;line-height:1.65}
+.primary,.secondary,.choice{border:0;border-radius:16px;padding:14px 18px;font-weight:850;transition:transform .18s,filter .18s}
+.primary{background:linear-gradient(135deg,var(--pink),#ffa7d3);color:#32152c;box-shadow:0 8px 30px #ff4d9430}
+.secondary{background:#ffffff0b;color:var(--cream);border:1px solid var(--line)}
+.primary:hover,.secondary:hover,.choice:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+.bunny{font-size:76px;display:inline-block;filter:drop-shadow(0 12px 24px #ff77b733);animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-9px) rotate(4deg)}}
+.section{margin:18px 0;background:linear-gradient(145deg,#ffffff0c,#ffffff04);border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:0 18px 55px #00000014}
+.section h2{margin:0 0 8px;font-size:1.4rem;letter-spacing:-.03em}
+.sub{color:var(--muted);line-height:1.55;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{text-align:left;min-height:90px;background:#ffffff09;color:var(--cream);border:1px solid var(--line);padding:14px}
+.choice small{display:block;color:var(--muted);font-weight:500;margin-top:5px;line-height:1.35}
+.result{margin-top:13px;padding:16px;border-radius:16px;background:#ff77b713;border:1px solid #ff77b744;line-height:1.55;display:none}
+.result.show{display:block;animation:pop .3s ease}
+@keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:scale(1)}}
+.meter{height:12px;border-radius:99px;background:#ffffff12;overflow:hidden;margin:16px 0 8px}
+.meter>div{height:100%;width:0;background:linear-gradient(90deg,var(--lav),var(--pink));border-radius:99px;transition:width .6s}
+.secret{display:none;margin-top:14px;border:1px dashed #ff77b777;border-radius:18px;padding:18px;background:#ff77b70b;line-height:1.65}
+.secret.show{display:block;animation:pop .35s ease}
+.secret h3{margin:0 0 8px;color:var(--pink)}
+.tapbox{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.tapbox .primary{flex:1}
+.counter{font-size:.85rem;color:var(--muted);min-width:100px;text-align:center}
+input{width:100%;border-radius:14px;padding:13px 14px;background:#ffffff0a;border:1px solid var(--line);color:var(--cream);font:inherit;margin:8px 0}
+input::placeholder{color:#b9a9c9}
+.note{font-size:.9rem;color:var(--muted);line-height:1.6}
+footer{text-align:center;padding:30px 8px;color:var(--muted);font-size:.9rem;line-height:1.8}
+.heart{color:var(--pink)}
+.tiny{font-size:.78rem;color:var(--muted)}
+@media(max-width:480px){.wrap{padding:17px 12px 48px}.hero{padding:46px 4px 28px}.section{padding:18px;border-radius:22px}.grid{grid-template-columns:1fr}.choice{min-height:72px}.top{font-size:.7rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div id="confetti" aria-hidden="true"></div>
+<div class="wrap">
+  <div class="top"><span class="pill">✦ bunny's secret corner</span><span>100% made for you</span></div>
+  <header class="hero">
+    <div class="bunny" aria-hidden="true">🐰</div>
+    <div class="eyebrow">IMPORTANT NOTICE FOR MY BABY</div>
+    <h1>Hey, <span>Bunny.</span><br>YOU. YES, YOU.</h1>
+    <p class="lead">You've officially been summoned for being adorable, working hard, and occupying approximately 97% of my brain. This website is evidence.</p>
+    <div class="actions">
+      <button class="primary" id="openBtn">Open your surprise ✨</button>
+      <button class="secondary" id="boopBtn">Boop the bunny 👉</button>
+    </div>
+    <div class="result" id="welcome" role="status"></div>
+  </header>
+
+  <section class="section">
+    <h2>📢 Official Bunny Appreciation Report</h2>
+    <p class="sub">An extremely serious scientific investigation. Peer reviewed by absolutely nobody.</p>
+    <div class="grid">
+      <button class="choice" data-report="Your hard work is not invisible. I noticed how much effort you put into preparing, and I'm genuinely proud of you. 🥹">🏆 Achievement unlocked<small>For showing up and working hard</small></button>
+      <button class="choice" data-report="Cutest human alert. The committee has reviewed the evidence and unfortunately there is no cure. 🐰">🐰 Bunny behavior<small>Suspicious levels of cuteness</small></button>
+      <button class="choice" data-report="Long-distance status: annoying. My affection for you: absolutely not affected by the distance. 💌">🌍 Distance report<small>Too far away, still very important</small></button>
+      <button class="choice" data-report="Official finding: you deserve to celebrate yourself. Please accept this tiny internet trophy and a very proud boyfriend. 🏆💗">💗 Final verdict<small>Tap for the committee's decision</small></button>
+    </div>
+    <div class="result" id="report" aria-live="polite"></div>
+  </section>
+
+  <section class="section">
+    <h2>🔐 A secret. But you have to earn it.</h2>
+    <p class="sub">Tap the button until the bunny's tiny brain reaches 100% affection capacity. This is definitely real science.</p>
+    <div class="meter" aria-label="Affection meter"><div id="meterFill"></div></div>
+    <div class="tapbox">
+      <button class="primary" id="tapBtn">Feed the affection meter 💗</button>
+      <span class="counter" id="counter">0 / 7 boops</span>
+    </div>
+    <div class="secret" id="secret" aria-live="polite">
+      <h3>✨ SECRET UNLOCKED ✨</h3>
+      My baby, I know this is just a little website, but I wanted to make you something that could be yours. You worked hard for your test preparation, and I hope you let yourself feel proud of that. You deserve to be celebrated—not only when you do well, but for the effort you put in, too. I'm cheering for you from my little corner of the world. I love having you in my life, Bunny. 💗
+      <div class="actions" style="justify-content:flex-start"><button class="secondary" id="confettiBtn">Celebrate again 🎉</button></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🧠 The Extremely Unfair Bunny Quiz</h2>
+    <p class="sub">Choose the answer. One option is correct, one is nonsense, and one is a trap. (Okay, they're all traps.)</p>
+    <p><strong>What should Bunny receive for working so hard?</strong></p>
+    <div class="grid" id="quiz">
+      <button class="choice" data-quiz="wrong">A 47-page tax document 📄</button>
+      <button class="choice" data-quiz="right">A huge amount of praise + a proud boyfriend 💗</button>
+      <button class="choice" data-quiz="wrong">One (1) suspicious potato 🥔</button>
+    </div>
+    <div class="result" id="quizResult" aria-live="polite"></div>
+  </section>
+
+  <section class="section">
+    <h2>💌 Leave a tiny message in our corner</h2>
+    <p class="sub">Type a wish, a silly thought, or what you want us to do together next. This stays on this page while it's open; it isn't sent to me automatically.</p>
+    <input id="wishInput" maxlength="180" placeholder="Bunny's tiny message goes here..." aria-label="Your message">
+    <button class="primary" id="wishBtn">Keep this little thought ✨</button>
+    <div class="result" id="wishResult" aria-live="polite"></div>
+    <p class="tiny">Privacy note: this page doesn't collect or send anything anywhere.</p>
+  </section>
+
+  <section class="section">
+    <h2>🫶 One last thing, my baby…</h2>
+    <p class="sub">If your brain ever gets loud and forgets how far you've come, come back here for a tiny reminder:</p>
+    <div style="font-size:1.18rem;line-height:1.7">You tried. You studied. You kept going. <span class="heart">That matters.</span> I'm proud of you, Bunny. No score can measure all the things that make you special. 💗</div>
+    <div class="actions"><button class="primary" id="finalBtn">Press for emergency affection 🚨</button></div>
+    <div class="result" id="finalResult" aria-live="polite"></div>
+  </section>
+  <footer>
+    made with 0 money, 100% effort, and an unreasonable amount of bunny energy<br>
+    <span class="heart">♡</span> for Bunny, from your human <span class="heart">♡</span>
+    <p class="tiny">P.S. You can screenshot anything you want to keep. This is your little corner.</p>
+  </footer>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+function confetti(count=34){const layer=$('confetti');const bits=['💗','💖','✨','🐰','💕','⭐'];for(let i=0;i<count;i++){const el=document.createElement('span');el.className='spark';el.textContent=bits[Math.floor(Math.random()*bits.length)];el.style.left=Math.random()*100+'%';el.style.top=(-10-Math.random()*30)+'px';el.style.animationDelay=Math.random()*.55+'s';el.style.fontSize=(14+Math.random()*17)+'px';layer.appendChild(el);setTimeout(()=>el.remove(),2400)}}
+$('openBtn').addEventListener('click',()=>{$('welcome').textContent="SURPRISE! 🎉 You have unlocked one (1) very proud boyfriend, unlimited imaginary forehead boops, and a tiny corner of the internet made just for you, Bunny. Now explore. There are secrets hiding below 👀";$('welcome').classList.add('show');confetti();$('welcome').scrollIntoView({behavior:'smooth',block:'nearest'})});
+$('boopBtn').addEventListener('click',()=>{const msgs=['boop! 🐰','BUNNY HAS BEEN BOOPED.','tiny nose. enormous power.','boop count: classified.','your boyfriend sends a virtual nose boop 💗'];$('boopBtn').textContent=msgs[Math.floor(Math.random()*msgs.length)];confetti(8)});
+document.querySelectorAll('[data-report]').forEach(b=>b.addEventListener('click',()=>{$('report').textContent=b.dataset.report;$('report').classList.add('show')}));
+let taps=0;
+$('tapBtn').addEventListener('click',()=>{taps=Math.min(7,taps+1);$('counter').textContent=taps+' / 7 boops';$('meterFill').style.width=(taps/7*100)+'%';$('tapBtn').textContent=taps===7?'AFFECTION OVERFLOW 💥':'BOOP! 💗';if(taps===7){$('secret').classList.add('show');confetti(48);$('secret').scrollIntoView({behavior:'smooth',block:'nearest'})}});
+$('confettiBtn').addEventListener('click',()=>confetti(60));
+document.querySelectorAll('[data-quiz]').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.quiz==='right'){$('quizResult').textContent='CORRECT. 🎓 Your prize: one proud boyfriend, 9000 imaginary hugs, and permission to brag about your hard work. Bunny supremacy.';confetti(24)}else{$('quizResult').textContent='INCORRECT, YOUR HONOR. 😭 Please try again. The potato is not an acceptable substitute for celebrating Bunny.'}$('quizResult').classList.add('show')}));
+$('wishBtn').addEventListener('click',()=>{const v=$('wishInput').value.trim();$('wishResult').textContent=v?`Saved in this little moment: “${v}” 💗 (Only on this open page—nothing was sent or stored.)`:'Bunny, you have to type a tiny thought first 😭';$('wishResult').classList.add('show')});
+$('finalBtn').addEventListener('click',()=>{$('finalResult').textContent='🚨 EMERGENCY ALERT: Bunny is loved. Bunny is appreciated. Bunny is allowed to rest. Bunny must accept one (1) extremely dramatic virtual hug immediately. THIS IS NOT A DRILL. 💗🐰';$('finalResult').classList.add('show');confetti(55)});
+</script>
+</body>
+</html>
